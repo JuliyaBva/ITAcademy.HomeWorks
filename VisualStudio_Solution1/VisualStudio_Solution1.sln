@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hw_01_assets", "hw_01_assets", "{A4E4A603-B37A-483C-8C1C-1EC3B0917228}"
+	ProjectSection(SolutionItems) = preProject
+		hw_01_assets\Hotel booking algorithm.txt = hw_01_assets\Hotel booking algorithm.txt
+		hw_01_assets\Hotel booking algorithm_flowchart.bmp = hw_01_assets\Hotel booking algorithm_flowchart.bmp
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution

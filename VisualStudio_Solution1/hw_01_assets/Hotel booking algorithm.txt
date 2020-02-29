@@ -13,6 +13,3 @@ Precondition: there is internet connection.
 9. Enter your address, payment details and click "Complete booking".
 
 Postconditions: email from booking.com was received with booking confirmation and reservation details.
-
-
-
