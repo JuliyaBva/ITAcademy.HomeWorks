@@ -1,0 +1,18 @@
+Algorithm to book a hotel via booking.com
+
+Precondition: there is internet connection.
+
+1. Go to booking.com
+2. Enter region where hotel will be booked, or hotel name.
+3. Select trip duration.
+4. Select person/s who will be stay in hotel and click "Search".
+5. Filter request by required parameters (Your budget, Star rating, etc.).
+6. Select the required hotel and click "See availability".
+7. Select room type, number of rooms and click "I'll reserve".
+8. Enter your details and click "Next: Final details".
+9. Enter your address, payment details and click "Complete booking".
+
+Postconditions: email from booking.com was received with booking confirmation and reservation details.
+
+
+
