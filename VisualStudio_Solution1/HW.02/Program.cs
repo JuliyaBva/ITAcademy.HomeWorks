@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace HW._02
 {
@@ -14,7 +15,18 @@ namespace HW._02
             //6. Initialization of the counter; continuation condition; iteration.
             //7. Convert a specified value (arrayOfTextResult[i], 2) to an 8-bit unsigned integer and save it to byte binary variable.
             //8. Assignment binary to imageBytes[i].
-            //9. Create a new file (image.bmp), writes the specified byte array (imageBytes) to the file, and then closes the file. 
+            //9. Create a new file (image.bmp), writes the specified byte array (imageBytes) to the file, and then closes the file.
+            StreamReader textReader = new StreamReader(@"C:\Temp\image.txt", true);
+            string textReaderResult = textReader.ReadToEnd();
+            textReader.Dispose();
+            string[] arrayOfTextResult = textReaderResult.Split(' ');
+            byte[] imageBytes = new byte[arrayOfTextResult.Length - 1];
+            for (int i = 0; i < arrayOfTextResult.Length - 1; i++)
+            {
+                byte binary = Convert.ToByte(arrayOfTextResult[i], 2);
+                imageBytes[i] = binary;
+            }
+            File.WriteAllBytes(@"C:\Temp\image.png", imageBytes);
         }
     }
 }
